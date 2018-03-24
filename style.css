@@ -1,3 +1,8 @@
+@font-face {
+    font-family: SpringisComing;
+    src: url(font/SpringisComing.ttf);
+}
+
 body{
     background-color: #EBEDEF;
     padding-top: 20px;
@@ -10,14 +15,14 @@ body{
 }
 
 #banner{
-    height: 20%;
-    width: 100%;
+    height: 360px;
+    width: 1200px;
     background-color: #5DADE2;
 }
 #info{
     float: left;
-    height: 80%;
-    width: 30%;
+    height: 1440px;
+    width: 360px;
     background-color: #E5E8E8;
 }
 #details{
@@ -25,4 +30,50 @@ body{
     height: 80%;
     width: 70%;
     background-color: #FDFEFE;
+}
+
+
+#photo{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-top: 30px;
+}
+
+#identity_photo{
+    float: left;
+    height: 360px;
+    width: 360px;
+    text-align: center;
+    margin: 0px;
+}
+
+#identity_name{
+    float: left;
+    text-align: center;
+    height: 360px;
+    width: 840px;
+}
+
+#identity_text_name{
+    font-size: 64px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: solid;
+    border-color: white;
+    margin: 80px 100px 0px 100px;
+    padding: 20px; 
+}
+
+#identity_text_profession{
+    color: white;
+    font-family: SpringisComing;
+    background-color: #17202A;
+    padding: 10px;
+    margin:  -20px 200px 200px 200px;
+    font-size: 50px;
+}
+
+#download{
+    display: none;
 }
