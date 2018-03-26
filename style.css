@@ -40,6 +40,10 @@ body{
     margin-top: 30px;
 }
 
+#photo:hover{
+    transform: scale(1.1);
+}
+
 #identity_photo{
     float: left;
     height: 360px;
@@ -75,5 +79,5 @@ body{
 }
 
 #download{
-    display: none;
+    /*display: none; */
 }
