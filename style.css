@@ -53,23 +53,29 @@ body{
 }
 
 #identity_name{
-    float: left;
+    position: relative;
+    display: inline-block;
     text-align: center;
     height: 360px;
     width: 840px;
 }
 
 #identity_text_name{
+    position: relative;
+    top: 110px;
     font-size: 64px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-style: solid;
     border-color: white;
-    margin: 80px 100px 0px 100px;
-    padding: 20px; 
+    border-width: 5px;
+    padding: 50px; 
+    text-align: center;
 }
 
 #identity_text_profession{
+    position: relative;
+    top: 150px;
     color: white;
     font-family: SpringisComing;
     background-color: #17202A;
@@ -78,6 +84,15 @@ body{
     font-size: 50px;
 }
 
-#download{
-    /*display: none; */
+.material-icons{
+    position: relative;
+    color: white;
+    top: 180px;
+    left: 380px; 
+    padding: 2px;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    transform: scale(1.2);
 }
