@@ -24,6 +24,7 @@ body{
     height: 1440px;
     width: 360px;
     background-color: #E5E8E8;
+    text-align: center;
 }
 #details{
     display: inline-block;
@@ -84,7 +85,7 @@ body{
     font-size: 50px;
 }
 
-.material-icons{
+#capture_logo{
     position: relative;
     color: white;
     top: 180px;
@@ -95,4 +96,68 @@ body{
 
 .material-icons:hover{
     transform: scale(1.2);
+}
+
+.info{
+    border-style: dashed;
+    border-color: #5DADE2;
+    border-width: 5px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 55px 5px 55px; 
+    text-align: center;
+}
+
+#profile{
+    position: relative;
+    top: 70px;
+}
+
+#contact{
+    position: relative;
+    top: 130px;
+}
+
+#info_text{
+    color: #17202A;
+    position: relative;
+    top: 100px;
+    margin: auto 60px 20px 60px;
+    font-size: 20px;
+    text-align: justify;
+}
+#info_contact{
+    color: #17202A;
+    position: relative;
+    top: 160px;
+    margin: auto 60px 20px 60px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#langue{
+    position: relative;
+    top: 180px;
+}
+
+#info_langue{
+    position: relative;
+    top: 220px;
+}
+
+.langue{
+    background-color: #5DADE2;
+    padding: 5px;
+    padding-left: 0px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.langue_logo{
+    padding: 5px;
+    margin-left: 0px;
+    border-style: solid;
+    border-color: #E5E8E8;
+    border-width: 4px;
+    border-radius: 30px;
 }
