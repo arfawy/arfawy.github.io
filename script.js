@@ -14,6 +14,5 @@ function capture(id) {
 
         document.body.removeChild(link);
         delete link;
-
     });
 }
