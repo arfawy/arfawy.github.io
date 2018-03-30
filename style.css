@@ -3,6 +3,16 @@
     src: url(font/SpringisComing.ttf);
 }
 
+:root{
+    --main-color: #212F3D;
+    --theme-color: #5DADE2;
+    --info-bg-color:#E5E8E8;
+}
+
+*{
+    color: var(--main-color);
+}
+
 body{
     background-color: #EBEDEF;
     padding-top: 20px;
@@ -11,19 +21,19 @@ body{
     height: 1800px;
     width: 1200px;
     margin: auto;
-    box-shadow: 5px 5px 20px #555;
+    box-shadow: 5px 5px 20px var(--main-color);
 }
 
 #banner{
     height: 360px;
     width: 1200px;
-    background-color: #5DADE2;
+    background-color: var(--theme-color);
 }
 #info{
     float: left;
     height: 1440px;
     width: 360px;
-    background-color: #E5E8E8;
+    background-color: var(--info-bg-color);
     text-align: center;
 }
 #details{
@@ -79,13 +89,13 @@ body{
     top: 150px;
     color: white;
     font-family: SpringisComing;
-    background-color: #17202A;
+    background-color: var(--main-color);
     padding: 10px;
     margin:  -20px 200px 200px 200px;
     font-size: 50px;
 }
 
-#capture_logo{
+#capture_logo i{
     position: relative;
     color: white;
     top: 180px;
@@ -100,7 +110,7 @@ body{
 
 .info{
     border-style: dashed;
-    border-color: #5DADE2;
+    border-color: var(--theme-color);
     border-width: 5px;
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -119,7 +129,7 @@ body{
 }
 
 #info_text{
-    color: #17202A;
+    color: var(--main-color);
     position: relative;
     top: 100px;
     margin: auto 60px 20px 60px;
@@ -127,7 +137,7 @@ body{
     text-align: justify;
 }
 #info_contact{
-    color: #17202A;
+    color: var(--main-color);
     position: relative;
     top: 160px;
     margin: auto 60px 20px 60px;
@@ -145,19 +155,25 @@ body{
     top: 220px;
 }
 
-.langue{
-    background-color: #5DADE2;
-    padding: 5px;
-    padding-left: 0px;
-    border-radius: 30px;
-    overflow: hidden;
+.langue *{
+    color: var(--info-bg-color);
 }
 
 .langue_logo{
-    padding: 5px;
-    margin-left: 0px;
+    background-color: var(--theme-color);
+    padding: 15px;
+    border-radius: 30px;
     border-style: solid;
-    border-color: #E5E8E8;
-    border-width: 4px;
+    border-width: 5px;
+    border-color: var(--info-bg-color);
+    overflow: hidden;
+    font-weight: bold;
+    
+}
+
+.langue{
+    background-color: var(--theme-color);
+    padding: 15px;
+    padding-left: 0px;
     border-radius: 30px;
 }
