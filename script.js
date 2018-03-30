@@ -16,3 +16,12 @@ function capture(id) {
         delete link;
     });
 }
+
+function redirection(link_string){
+    var link = document.createElement("a");
+    link.href = link_string;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    delete link;
+}

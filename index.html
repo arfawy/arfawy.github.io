@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mon Curiculium Vitae</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -25,7 +25,7 @@
         </div>
         <div id="info">
             <span id="profile" class="info">PROFILE</span>
-            <div id="info_text">
+            <div id="profile_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     In id commodo mauris. Quisque eu sodales leo. Sed nunc lacus, 
                     lobortis sit amet volutpat ornare, blandit a tellus. 
@@ -33,16 +33,58 @@
             </div>
             <span id="contact" class="info">CONTACT</span>
             <div id="info_contact">
-                    <i class="material-icons">phone_android</i> +212 690 20 90 12<br/>
-                    <i class="material-icons">mail</i> arfawy1@gmail.com<br/>
-                    <i class="material-icons">location_on</i> 14 Rue Madagascar,<br/> Mont Fleuri 1 - Fès<br/>
-                    <a href="https://arfawy.github.io"><i class="material-icons">language</i></a> arfawy.github.io<br/>
+                <table>
+                    <tr>
+                        <td><i class="material-icons">phone_android</i></td><td>+212 690 20 90 12</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">mail</i></td><td>arfawy1@gmail.com</td>
+                    </tr>
+                    <tr>
+                            
+                        <td><i  class="material-icons">location_on</i></td><td>14 Rue Madagascar,<br/> Mont Fleuri 1 - Fès<br/></td>
+                    </tr>
+                    <tr>
+                        <td><i onclick="redirection('https://arfawy.github.io')" class="material-icons">language</i></td><td>arfawy.github.io</td>
+                    </tr>
+                </table>
             </div>
             <span id="langue" class="info">LANGUES</span>
             <div id="info_langue">
-                <span class="langue">
-                    <span class="langue_logo">C1</span><span class="langue_name"> FRANCAIS</span>
-                </span>
+                <table>
+                    <tr>
+                        <td><span class="langue">
+                                <span class="langue_logo">C1</span><span class="langue_name">FRANCAIS</span>
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="langue">
+                                    <span class="langue_logo">A2</span><span class="langue_name">ANGLAIS</span>
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="langue">
+                                    <span class="langue_logo">A2</span><span class="langue_name">ARABE</span>
+                        </span></td>
+                    </tr>
+                </table>
+            </div>
+            <span id="social" class="info">SOCIAL</span>
+            <div id="info_social">
+                <table>
+                    <tr>
+                        <td><img class="icons" onclick="redirection('https://linkedin.com/in/arfawy')" src="img/icons/linkedin.png" /></td><td>linkedin.com/in/arfawy</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icons" onclick="redirection('https://instagram.com/arfawy')" src="img/icons/instagram.png" /></td><td>instagram.com/arfawy</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icons" onclick="redirection('https://twitter.com/arfawy')" src="img/icons/twitter.png" /></td><td>twitter.com/arfawy</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icons" onclick="redirection('https://fb.me/arfawy')" src="img/icons/facebook.png" /></td><td>fb.me/arfawy</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div id="details">
