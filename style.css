@@ -42,6 +42,7 @@ body{
     height: 80%;
     width: 70%;
     background-color: var(--details-bg-color);
+    text-align: center;
 }
 
 
@@ -83,15 +84,18 @@ body{
     text-align: center;
 }
 
-#identity_text_profession{
-    position: relative;
-    top: 150px;
+.t_title{
     color: white;
     font-family: SpringisComing;
     background-color: var(--main-color);
     padding: 10px;
-    margin:  -20px 200px 200px 200px;
     font-size: 50px;
+}
+
+#identity_text_profession{
+    position: relative;
+    top: 150px;
+    margin:  -20px 200px 200px 200px;
 }
 
 #capture_logo i{
@@ -117,19 +121,19 @@ body{
 
 #profile{
     position: relative;
-    top: 70px;
+    top: 60px;
 }
 
 #profile_text{
-    top: 100px;
+    top: 90px;
 }
 
 #contact{
     position: relative;
-    top: 130px;
+    top: 110px;
 }
 
-#profile_text, #info_contact{
+#profile_text, #contact_text, #seo_text{
     color: var(--main-color);
     position: relative;
     margin: auto 60px 20px 60px;
@@ -138,18 +142,18 @@ body{
 }
 
 
-#info_contact{
-    top: 155px;
+#contact_text{
+    top: 140px;
 }
 
 #langue{
     position: relative;
-    top: 185px;
+    top: 160px;
 }
 
-#info_langue{
+#langue_text{
     position: relative;
-    top: 220px;
+    top: 190px;
 }
 
 .langue *{
@@ -170,11 +174,11 @@ body{
     padding-right: 60px;
     border-radius: 30px;
 }
-#info_langue table, #info_social table{
+#langue_text table, #social_text table{
     margin: auto;
 }
 
-#info_langue td{
+#langue_text td{
     height: 60px;
 }
 .langue_name{
@@ -183,18 +187,88 @@ body{
 
 #social{
     position: relative;
-    top: 270px;
+    top: 235px;
 }
 
-#info_social{
+#social_text{
     position: relative;
-    top: 300px;
+    top: 260px;
     text-align: left;
     font-size: 20px;
 }
 
+#seo{
+    position: relative;
+    top: 300px;
+}
+
+#seo_text{
+    position: relative;
+    top: 330px;
+    text-align: unset;
+}
 
 .icons{
     height: 30px;
     width: 30px;
+}
+
+#details_education{
+    position: relative;
+    top: 40px;
+}
+
+#details_education_text{
+    position: relative;
+    top: 20px;
+}
+
+#details_work_experience{
+    position: relative;
+    top: 100px;
+}
+
+#details_work_experience_text_table{
+    position: relative;
+    top: 80px;
+    margin-left: 0px;
+}
+
+#details_work_experience_text_p{
+    position: relative;
+    top: 80px;
+}
+
+#details_skills{
+    position: relative;
+    top: 150px;
+}
+
+#details_skills_text{
+    top: 180px;
+}
+
+#details_skills_text tr td{
+    padding: 5px;
+}
+
+.details_ed{
+    top: 50px;
+    margin-bottom: 15px;
+}
+
+.details_ed, #details_work_experience_text, #details_skills_text{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.td_gras{
+    font-weight: bold;
+}
+
+#details_we{
+    position: relative;
+    top:50px;
 }
