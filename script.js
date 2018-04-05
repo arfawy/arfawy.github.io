@@ -20,6 +20,7 @@ function capture(id) {
 function redirection(link_string){
     var link = document.createElement("a");
     link.href = link_string;
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
