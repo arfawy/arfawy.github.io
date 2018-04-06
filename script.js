@@ -1,3 +1,13 @@
+function myloader(){
+    setTimeout(loader, 1000);
+}
+
+function loader(){
+    document.getElementById('loader').style.display = "none";
+    document.getElementById('contenu').style.display = "flex";
+    document.body.setAttribute("style", "background-color: #EBEDEF; padding-top: 20px; padding-bottom: 20px;");
+}
+
 function capture(id) {
     id = "#" + id;
     var img;
