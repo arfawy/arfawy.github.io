@@ -3,189 +3,110 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mon Curiculium Vitae</title>
-    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
-    <link rel="icon" href="img/icons/favicon.png" type="image/x-icon">
+    <title>Flex CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </head>
-
 <body>
     <div id="contenu">
         <div id="banner">
-                <div id="identity_photo"><img id="photo" src="img/photo_identity.jpg" alt="photo_identity"/></div>
-                <div id="identity_name">
-                    <span id="identity_text_name">SIDI Benarfa Mze</span><br />
-                    <span class="t_title" id="identity_text_profession">- Developpeur Informatique -</span>
-                    <span  id="capture_logo"><i class="material-icons" onclick="capture('contenu');">photo_camera</i></span>
-                </div>
+            <div id="banner-photo"><img src="img/photo_identity.jpg" alt="photo_identity"/></div>
+            <div id="banner-title">
+                    <span id="banner-title-name">SIDI Benarfa Mze</span>
+                    <span id="banner-title-title" class="title-dark">- Developpeur Informatique -</span>
+                    <span  id="banner-title-screenshot"><i class="material-icons" onclick="capture('contenu');">photo_camera</i></span>
+            </div>
         </div>
         <div id="info">
-            <span id="profile" class="info">PROFILE</span>
-            <div id="profile_text">
+            <div id="info-profile" class="info-title">PROFILE</div>
+            <div id="info-profile-text">
                     Lorem ipsum 
             </div>
-            <span id="contact" class="info">CONTACT</span>
-            <div id="contact_text">
-                <table>
-                    <tr>
-                        <td><i class="material-icons">phone_android</i></td><td>+212 690 20 90 12</td>
-                    </tr>
-                    <tr>
-                        <td><i class="material-icons">mail</i></td><td>arfawy1@gmail.com</td>
-                    </tr>
-                    <tr>
-                            
-                        <td><i  class="material-icons">location_on</i></td><td>14 Rue Madagascar,<br/> Mont Fleuri 1 - Fès<br/></td>
-                    </tr>
-                    <tr>
-                        <td><i onclick="redirection('https://arfawy.github.io')" class="material-icons">language</i></td><td>arfawy.github.io</td>
-                    </tr>
-                </table>
+            <div id="info-contact" class="info-title">CONTACT</div>
+            <div id="info-contact-text">
+                <span><i  class="material-icons icon">phone_android</i> +212 690 20 90 12</span>
+                <span><i class="material-icons icon">mail</i> arfawy1@gmail.com</span>
+                <span id="info-contact-text-adress"><i class="material-icons icon">location_on</i><span> 14 Rue Madagascar,<br/> Mont Fleuri 1 - Fès</span></span>
+                <span><i onclick="redirection('https://arfawy.github.io')" class="material-icons icon">language</i> arfawy.github.io</span>
             </div>
-            <span id="langue" class="info">LANGUES</span>
-            <div id="langue_text">
-                <table>
-                    <tr>
-                        <td><span class="langue">
-                                <span class="langue_logo">C1</span><span class="langue_name">FRANCAIS</span>
-                        </span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="langue">
-                                    <span class="langue_logo">A2</span><span class="langue_name">ANGLAIS</span>
-                        </span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="langue">
-                                    <span class="langue_logo">A2</span><span class="langue_name">ARABE</span>
-                        </span></td>
-                    </tr>
-                </table>
+            <span id="info-langue" class="info-title">LANGUES</span>
+            <div id="info-langue-text">
+                <span class="langue">
+                    <span>C1</span>
+                    <span>FRANCAIS</span>
+                </span>
+                <span class="langue">
+                    <span>A2</span>
+                    <span>ANGLAIS</span>
+                </span>
+                <span class="langue">
+                    <span>A2</span>
+                    <span>ARABE</span>
+                </span>
             </div>
-            <span id="social" class="info">SOCIAL</span>
-            <div id="social_text">
-                <table>
-                    <tr>
-                        <td><img class="icons" onclick="redirection('https://linkedin.com/in/arfawy')" src="img/icons/linkedin.png" /></td><td>linkedin.com/in/arfawy</td>
-                    </tr>
-                    <tr>
-                        <td><img class="icons" onclick="redirection('https://instagram.com/arfawy')" src="img/icons/instagram.png" /></td><td>instagram.com/arfawy</td>
-                    </tr>
-                    <tr>
-                        <td><img class="icons" onclick="redirection('https://twitter.com/arfawy')" src="img/icons/twitter.png" /></td><td>twitter.com/arfawy</td>
-                    </tr>
-                    <tr>
-                        <td><img class="icons" onclick="redirection('https://fb.me/arfawy')" src="img/icons/facebook.png" /></td><td>fb.me/arfawy</td>
-                    </tr>
-                </table>
+            <span id="info-social" class="info-title">SOCIAL</span>
+            <div id="info-social-text">
+                <span><img class="icon" onclick="redirection('https://linkedin.com/in/arfawy')" src="img/icons/linkedin.png" /> linkedin.com/in/arfawy</span>
+                <span><img class="icon" onclick="redirection('https://instagram.com/arfawy')" src="img/icons/instagram.png" /> instagram.com/arfawy</span>
+                <span><img class="icon" onclick="redirection('https://twitter.com/arfawy')" src="img/icons/twitter.png" /> twitter.com/arfawy</span>
+                <span><img class="icon" onclick="redirection('https://fb.me/arfawy')" src="img/icons/facebook.png" /> fb.me/arfawy</span>
             </div>
-            <span id="seo" class="info">Intérêts</span>
-            <div id="seo_text">
+            <span id="info-seo" class="info-title">Intérêts</span>
+            <div id="info-seo-text">
                     Actualités High-tech, Smartphone, Jeux Vidéos, Dessins, Designs, Japan animation, Culture, Animaux, Rubik’s cube 
             </div>
         </div>
         <div id="details">
-            <span class="t_title" id="details_education">Formation</span>
-            <div id="details_education_text">
-                <table class="details_ed">
-                    <tr class="td_gras">
-                        <td>2015 - 2016 </td><td>&bull; Master &bull; </td><td>Master M1 en Qualité du Logiciel – MQL</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">&bull; Université Sidi Mohamed Ben Abdellah </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc </td>
-                    </tr>
-                </table>
-                <table class="details_ed">
-                    <tr class="td_gras">
-                        <td>2014 - 2015 </td><td>&bull; Licence &bull; </td><td>Science Mathématique et Informatique </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">&bull; Université Sidi Mohamed Ben Abdellah </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc </td>
-                    </tr>
-                </table>
-                <table class="details_ed">
-                    <tr class="td_gras">
-                        <td>2011 - 2015 </td><td>&bull; DEUG &bull; </td><td>Science Mathématique et Informatique </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">&bull; Université Sidi Mohamed Ben Abdellah </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc </td>
-                    </tr>
-                </table>
-                <table class="details_ed">
-                    <tr class="td_gras">
-                        <td>2010 - 2011 </td><td>&bull;  Baccalauréat  &bull; </td><td>Science Mathématique</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"> Ecole Communautaire Régionale de Fomboni – Mohéli Comores  </td>
-                    </tr>
-                </table>
-            </div>
-            <span class="t_title" id="details_work_experience">Expérience Professionnelle et Projets</span>
-            <span id="details_we">
-                <div id="details_work_experience_text">
-                    <table  id="details_work_experience_text_table" class="details_ed">
-                        <tr class="td_gras">
-                            <td>2017 </td><td>&bull;  STAGE  &bull; </td><td>Sécurité WEB</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"> Value IT – Casablanca Maroc</td>
-                        </tr>
-                    </table>
-                    <p id="details_work_experience_text_p">
-                    Gestion de Contacts(Android), Gestion Electronique de Documents, <br/>
-                    BotNet (Application Clients-Serveur), Plateforme de Jeux Vidéos
-                    </p>
+            <span class="title-dark" id="details-education">Formation</span>
+            <div id="details-education-text">
+                <div id="det-column">
+                    <div><span>2010 - 2011</span><span>&bull;</span><span>Baccalauréat</span><span>&bull;</span><span>Science Mathématique</span></div>
+                    <div>Ecole Communautaire Régionale de Fomboni – Mohéli Comores</div>
                 </div>
-            </span>
-            <span class="t_title" id="details_skills">Compétences Techniques</span>
-            <table id="details_skills_text">
-                <tr>
-                    <td class="td_gras">Langage de programmation :</td><td>Java, Shell, C, C++ </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Technologie XML :</td><td>DTD, XSD, XSLT, xQuery, DOM </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Développement mobile :</td><td> Android, ionic 2 </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Conception et Modélisation :</td><td>Merise, UML 3, Design Patterns </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Environnement de Développement :</td><td>Eclipse, Dev C++, Microsoft Visual Studio, Android Studio</td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Ingénierie du Web :</td><td>Html5, JavaScript, PHP, CMS Joomla, Angular 2</td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Sécurité du Web :</td><td> OWASP, OWASP ZAP, XSS, Injection SQL</td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Outils D’industrialisation :</td><td>Git, SVN, jUnit</td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Architecture JEE :</td><td> Servlets, JSP, Modèles MVC2, Spring Boot, Maven </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Système de gestion de base de données :</td><td> Oracle, MySQL,SQLServer, SQLite </td>
-                </tr>
-                <tr>
-                    <td class="td_gras">Autre :</td><td>Structure de données, Linux, Algorithmique, Culture d’Entreprise, Sockets en Java et en C </td>
-                </tr>
-            </table>
+                <div id="det-column">
+                    <div><span>2011 - 2015</span><span>&bull;</span><span>DEUG</span><span>&bull;</span><span>Science Mathématique et Informatique</span></div>
+                    <div>&bull; Université Sidi Mohamed Ben Abdellah</div>
+                    <div> Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc</div>
+                </div>
+                <div id="det-column">
+                        <div><span>2014 - 2015</span><span>&bull;</span><span>Licence</span><span>&bull;</span><span>Science Mathématique et Informatique</span></div>
+                        <div>&bull; Université Sidi Mohamed Ben Abdellah</div>
+                        <div> Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc</div> 
+                    </div>
+                <div id="det-column">
+                    <div><span>2015 - 2016</span><span>&bull;</span><span>Master</span><span>&bull;</span><span>Master M1 en Qualité du Logiciel – MQL</span></div>
+                    <div>&bull; Université Sidi Mohamed Ben Abdellah</div>
+                    <div> Département d’informatique, Faculté de Sciences Dhar El Mehraz – Fès Maroc</div>
+                </div>
+            </div>
+            <span class="title-dark" id="details-we">Expérience Professionnelle et Projets</span>
+            <div id="details-we-text">
+                <div>
+                    <span>2017</span><span>&bull;</span><span>STAGE</span><span>&bull;</span><span>Sécurité WEB</span>
+                </div>
+                <div>Value IT – Casablanca Maroc</div>
+                <div>
+                Gestion de Contacts(Android), Gestion Electronique de Documents,<br/>
+                BotNet (Application Clients-Serveur), Plateforme de Jeux Vidéos
+                </div>
+            </div>
+            <span class="title-dark" id="details-skills">Compétences Techniques</span>
+            <div id="details-skills-text">
+                <div><span>Langage de programmation :</span><span>Java, Shell, C, C++</span></div> 
+                <div><span>Technologie XML :</span><span>DTD, XSD, XSLT, xQuery, DOM</span></div>
+                <div><span>Développement mobile :</span><span>Android, ionic 2</span></div>
+                <div><span>Conception et Modélisation :</span><span>Merise, UML 3, Design Patterns</span></div>
+                <div><span>Environnement de Développement :</span><span>Eclipse, Dev C++, Microsoft Visual Studio, Android Studio</span></div>
+                <div><span>Ingénierie du Web :</span><span>HTML5, CSS3, JavaScript, PHP, CMS Joomla, Angular 2</span></div>
+                <div><span>Sécurité du Web :</span><span>OWASP, OWASP ZAP, XSS, Injection SQL</span></div>
+                <div><span>Outils D’industrialisation :</span><span>Git, SVN, jUnit</span></div>
+                <div><span>Architecture JEE :</span><span>Servlets, JSP, Modèles MVC2, Spring Boot, Maven</span></div>
+                <div><span>Système de gestion de base de données :</span><span>Oracle, MySQL,SQLServer, SQLite</span></div>
+                <div><span>Autre :</span><span>Structure de données, Linux, Algorithmique, Culture d’Entreprise, Sockets en Java et en C</span></div>
+            </div>
         </div>
     </div>
 </body>

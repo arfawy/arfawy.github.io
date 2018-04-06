@@ -1,274 +1,227 @@
+:root{
+    --main-color: #212F3D;
+    --theme-color:#5DADE2;
+    --info-bg-color:#dfe6e9;
+    --details-bg-color: #FDFEFE;
+    --marge-contenu: 30px;
+}
+
 @font-face {
     font-family: SpringisComing;
     src: url(font/SpringisComing.ttf);
 }
-
-:root{
-    --main-color: #212F3D;
-    --theme-color:#5DADE2;
-    --info-bg-color:#E5E8E8;
-    --details-bg-color: #FDFEFE;
-}
-
-*{
-    color: var(--main-color);
-}
-
 body{
     background-color: #EBEDEF;
     padding-top: 20px;
 }
+
 #contenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
     height: 1800px;
     width: 1200px;
-    margin: auto;
     box-shadow: 5px 5px 20px var(--main-color);
 }
-
 #banner{
+    display: flex; margin: auto;
+    background-color: var(--theme-color);
     height: 360px;
     width: 1200px;
-    background-color: var(--theme-color);
 }
-#info{
-    float: left;
-    height: 1440px;
+#banner-photo{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 360px;
     width: 360px;
-    background-color: var(--info-bg-color);
-    text-align: center;
 }
-#details{
-    display: inline-block;
-    height: 80%;
-    width: 70%;
-    background-color: var(--details-bg-color);
-    text-align: center;
-}
-
-
-#photo{
+#banner-photo img{
     height: 300px;
     width: 300px;
     border-radius: 150px;
-    margin-top: 30px;
 }
-
-#photo:hover{
+#banner-photo img:hover{
     transform: scale(1.1);
 }
-
-#identity_photo{
-    float: left;
-    height: 360px;
-    width: 360px;
-    text-align: center;
-    margin: 0px;
-}
-
-#identity_name{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+#banner-title{
+    display: flex;
+    flex-direction: column;
     height: 360px;
     width: 840px;
 }
-
-#identity_text_name{
-    position: relative;
-    top: 110px;
+#banner-title-name{
     font-size: 64px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 5px solid white;
-    padding: 50px; 
-    text-align: center;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: -20px;
 }
-
-.t_title{
+.title-dark{
     color: white;
     font-family: SpringisComing;
     background-color: var(--main-color);
     padding: 10px;
     font-size: 50px;
 }
-
-#identity_text_profession{
-    position: relative;
-    top: 150px;
-    margin:  -20px 200px 200px 200px;
+#banner-title-title{
+    margin:  -10px 200px 30px 200px;
 }
-
-#capture_logo i{
+#banner-title-screenshot{
     position: relative;
     color: white;
-    top: 180px;
-    left: 380px; 
-    padding: 2px;
     cursor: pointer;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
-.material-icons:hover, .icons:hover{
+.icon:hover{
     transform: scale(1.2);
 }
-
-.info{
+#banner-title-screenshot i:hover{
+    transform: scale(1.3);
+}
+#info{
+    background-color: var(--info-bg-color);
+    height: 1440px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.info-title{
     border: 5px dashed var(--theme-color);
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 5px 55px 5px 55px; 
+    padding: 5px 55px 5px 55px;
     text-align: center;
+    margin: var(--marge-contenu);
 }
-
-#profile{
-    position: relative;
-    top: 60px;
-}
-
-#profile_text{
-    top: 90px;
-}
-
-#contact{
-    position: relative;
-    top: 110px;
-}
-
-#profile_text, #contact_text, #seo_text{
+#info-profile-text, #info-contact-text, #info-social-text, #info-seo-text{
     color: var(--main-color);
-    position: relative;
-    margin: auto 60px 20px 60px;
     font-size: 20px;
     text-align: justify;
+    margin: 0 40px 0 40px;
+    line-height: 35px;
 }
-
-
-#contact_text{
-    top: 140px;
+#info-contact-text{
+    display: flex;
+    flex-direction: column;
 }
-
-#langue{
-    position: relative;
-    top: 160px;
+#info-contact-text *{
+    vertical-align: middle;
 }
-
-#langue_text{
-    position: relative;
-    top: 190px;
+#info-contact-text-adress{
+    display: flex;
+    flex-direction: row;
 }
-
-.langue *{
-    color: var(--info-bg-color);
+#info-langue-text{
+    display: flex;
+    flex-direction: column;
 }
-
-.langue_logo{
-    padding: 15px;
-    border-radius: 50%;
-    border: 7px solid var(--info-bg-color);
-    font-weight: bold;
-}
-
 .langue{
     background-color: var(--theme-color);
     padding: 15px;
     padding-left: 0px;
-    padding-right: 60px;
     border-radius: 30px;
+    margin: 0px 30px 15px 32px;
+    font-weight: bold;
+    color: white;
 }
-#langue_text table, #social_text table{
-    margin: auto;
+.langue span:nth-child(1){
+    padding: 15px;
+    border-radius: 50%;
+    border: 7px solid var(--info-bg-color);
 }
-
-#langue_text td{
-    height: 60px;
-}
-.langue_name{
+.langue span:nth-child(2){
     padding-left: 50px;
 }
-
-#social{
-    position: relative;
-    top: 235px;
+#info-social-text{
+    display: flex;
+    flex-direction: column;
 }
 
-#social_text{
-    position: relative;
-    top: 260px;
-    text-align: left;
-    font-size: 20px;
-}
-
-#seo{
-    position: relative;
-    top: 300px;
-}
-
-#seo_text{
-    position: relative;
-    top: 330px;
-    text-align: unset;
-}
-
-.icons{
+#info-social-text img{
     height: 30px;
     width: 30px;
+    vertical-align: middle;
 }
 
-#details_education{
-    position: relative;
-    top: 40px;
+#info-seo-text{
+    text-align: center;
+}
+#details{
+    height: 1440px;
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--details-bg-color);
 }
 
-#details_education_text{
-    position: relative;
-    top: 20px;
+#details-education{
+    margin-top: var(--marge-contenu);
 }
-
-#details_work_experience{
-    position: relative;
-    top: 100px;
+#details-education-text{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: var(--marge-contenu);
 }
-
-#details_work_experience_text_table{
-    position: relative;
-    top: 80px;
-    margin-left: 0px;
+#det-column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
-
-#details_work_experience_text_p{
-    position: relative;
-    top: 80px;
-}
-
-#details_skills{
-    position: relative;
-    top: 150px;
-}
-
-#details_skills_text{
-    top: 180px;
-}
-
-#details_skills_text tr td{
-    padding: 5px;
-}
-
-.details_ed{
-    top: 50px;
-    margin-bottom: 15px;
-}
-
-.details_ed, #details_work_experience_text, #details_skills_text{
-    position: relative;
+#det-column div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 20px;
     text-align: left;
     margin-left: 80px;
+    margin-right: 80px;
 }
-
-.td_gras{
+#det-column div span{
     font-weight: bold;
 }
+#details-we-text{
+    margin-top: var(--marge-contenu);
+    font-size: 20px;
+}
+#details-we-text div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
 
-#details_we{
-    position: relative;
-    top:50px;
+#details-we-text div:nth-child(1){
+    font-weight: bold;
+}
+#details-skills{
+    margin-top: var(--marge-contenu);
+}
+#details-skills-text div{
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#details-skills-text{
+    margin-top: var(--marge-contenu);
+    padding-left: 70px;
+}
+
+#details-skills-text div span:nth-child(1){
+    font-weight: bold;
+    flex: 1;
+}
+#details-skills-text div span:nth-child(2){
+    flex: 2;
+    margin: auto;
+    margin-left: 10px;
 }
